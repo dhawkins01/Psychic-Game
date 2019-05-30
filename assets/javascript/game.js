@@ -23,7 +23,7 @@ var guessesLeft = function() {
 };
 
 var newGame = function() {
-	guessedLetters = [];
+	
     left = 9;
     newLetter();
     guessesLeft();
