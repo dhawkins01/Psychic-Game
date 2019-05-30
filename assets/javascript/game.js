@@ -6,10 +6,10 @@ var losses = 0;
 var left = 9;
 var guesses = 9;
 var guessesSoFar = [];
-var psychicLetter;
+var computerGuess;
 
 var newLetter = function() {
-    psychicLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+    computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
     
 };
 
@@ -39,7 +39,7 @@ document.onkeyup = function(event) {
     soFar();
     guessesLeft();
     if (left > 0) {
-        if (userGuess == psychicLetter) {
+        if (userGuess == computerGuess) {
         	wins++;
         	document.getElementById("wins").innerHTML = "Wins:" + wins;
             newGame();
